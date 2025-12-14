@@ -7,20 +7,19 @@ function App() {
     const [title, setTitle] = useState('Wall-E');
 
     const movies = [
-
         {title: "Wall-E"},
-
         {title: "Pulp Fiction"},
-
         {title: "Matrix"},
-
         {title: "1670"},
-
     ];
 
     function handleChange(event) {
         setTitle(event.target.value);
     }
+
+    // function addMovies() {
+    //     movies.map((title) => {movies})
+    // }
 
     let message;
     if(title.length <= 0) {
@@ -51,7 +50,7 @@ function App() {
             <h2>{message}</h2>
             <input type='text' onChange={handleChange} />
             <button type="button" onClick={() => alert(title)}>
-                Pokaż tytuł filmu
+                Wyświetl film
             </button>
 
             <ul>
