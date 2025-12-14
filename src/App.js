@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import {useState} from "react";
+import "milligram";
 
 function App() {
     const [title, setTitle] = useState('Wall-E');
@@ -44,7 +45,7 @@ function App() {
     }
 
     return (
-        <div>
+        <div className="container">
             <h1>My favourite movies to watch test</h1>
             <h2>{myFavouriteMovie}</h2>
             <h2>{message}</h2>
